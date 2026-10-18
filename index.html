@@ -2,222 +2,280 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Shiva Matrix Solutions provides IT recruitment, non-IT recruitment, executive search and talent acquisition services.">
-  <title>Shiva Matrix Solutions | Recruitment & Talent Solutions</title>
-  <style>
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: #17243a;
-      line-height: 1.65;
-    }
-    header {
-      background: #102647;
-      color: white;
-      padding: 18px 7%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-    .brand { font-size: 21px; font-weight: bold; }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 9px;
-      font-size: 14px;
-    }
-    .hero {
-      background: linear-gradient(120deg, #102647, #176b87);
-      color: white;
-      padding: 90px 8%;
-      text-align: center;
-    }
-    .hero h1 { font-size: clamp(32px, 5vw, 52px); line-height: 1.2; }
-    .hero p { max-width: 700px; margin: 20px auto 30px; }
-    .btn {
-      display: inline-block;
-      background: #f5b942;
-      color: #102647;
-      padding: 12px 23px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 5px;
-    }
-    .btn-outline {
-      background: transparent;
-      color: white;
-      border: 1px solid white;
-    }
-    section { padding: 65px 8%; }
-    .light { background: #f3f7fb; }
-    .section-title { text-align: center; margin-bottom: 35px; }
-    .section-title h2 { font-size: 30px; margin-bottom: 8px; }
-    .section-title p { color: #637188; }
-    .intro { max-width: 850px; margin: auto; text-align: center; }
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-    .card {
-      background: white;
-      padding: 25px;
-      border-radius: 10px;
-      border: 1px solid #e3eaf2;
-      box-shadow: 0 5px 18px #1026470b;
-    }
-    .card h3 { color: #176b87; }
-    .steps { max-width: 850px; margin: auto; }
-    .contact { text-align: center; background: #102647; color: white; }
-    .contact p { color: #e1eaf5; }
-    footer {
-      background: #0a1930;
-      color: #d8e1ed;
-      text-align: center;
-      padding: 20px;
-      font-size: 13px;
-    }
-    a { overflow-wrap: anywhere; }
-    @media (max-width: 600px) {
-      header { justify-content: center; text-align: center; }
-      nav { display: flex; flex-wrap: wrap; justify-content: center; }
-      nav a { margin: 5px; }
-      .hero { padding: 65px 6%; }
-      section { padding: 48px 6%; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Shiva Matrix Solutions provides recruitment and talent acquisition services for IT, Non-IT and leadership roles.">
+<title>Shiva Matrix Solutions | Talent. Trust. Growth.</title>
+<style>
+:root {
+  --navy: #10243c;
+  --teal: #087e8b;
+  --mint: #dff5f1;
+  --gold: #f4bd57;
+  --ink: #172a40;
+  --muted: #66758a;
+  --light: #f4f7fa;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--ink);
+  line-height: 1.65;
+}
+a { text-decoration: none; }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 7%;
+  background: white;
+  gap: 20px;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #e8edf2;
+}
+.logo { font-size: 19px; font-weight: 800; color: var(--navy); }
+.logo span { color: var(--teal); }
+nav { display: flex; flex-wrap: wrap; gap: 20px; }
+nav a { color: var(--ink); font-size: 14px; font-weight: 600; }
+nav a:hover { color: var(--teal); }
+.hero {
+  background: radial-gradient(ellipse at 90% 20%, #176b78 0, transparent 42%),
+              linear-gradient(120deg, #10243c, #143d54);
+  color: white;
+  padding: 100px 8%;
+}
+.hero-content { max-width: 850px; margin: auto; text-align: center; }
+.eyebrow {
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: bold;
+}
+h1 { font-size: clamp(38px, 6vw, 64px); line-height: 1.12; margin: 20px 0; }
+.hero p { color: #dbe7ef; max-width: 690px; margin: 0 auto 28px; font-size: 17px; }
+.btn {
+  display: inline-block;
+  padding: 13px 22px;
+  border-radius: 5px;
+  background: var(--gold);
+  color: var(--navy);
+  font-weight: bold;
+  margin: 5px;
+}
+.btn-outline { border: 1px solid #b8d5de; color: white; background: transparent; }
+section { padding: 70px 8%; }
+.section-head { text-align: center; max-width: 740px; margin: 0 auto 36px; }
+.section-head h2 { font-size: clamp(27px, 4vw, 38px); line-height: 1.2; margin: 10px 0; }
+.section-head p { color: var(--muted); }
+.kicker { color: var(--teal); text-transform: uppercase; letter-spacing: 1.5px; font-size: 12px; font-weight: bold; }
+.intro { max-width: 850px; margin: auto; text-align: center; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+.card {
+  background: white; padding: 25px; border: 1px solid #e4ebf0;
+  border-radius: 10px; box-shadow: 0 8px 24px #10243c08;
+}
+.card h3 { margin-top: 10px; }
+.card p { color: var(--muted); font-size: 14px; }
+.symbol {
+  display: grid; place-items: center; width: 46px; height: 46px;
+  border-radius: 10px; background: var(--mint); color: var(--teal);
+  font-weight: bold; font-size: 20px;
+}
+.soft { background: var(--light); }
+.feature-band { background: var(--mint); }
+.feature-band .grid { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+.feature { text-align: center; padding: 18px; }
+.feature h3 { margin-bottom: 5px; }
+.feature p { font-size: 14px; color: var(--muted); }
+.process { max-width: 850px; margin: auto; }
+.process-item { display: flex; gap: 18px; margin: 22px 0; }
+.number {
+  flex-shrink: 0; display: grid; place-items: center;
+  width: 42px; height: 42px; background: var(--navy);
+  color: white; border-radius: 50%; font-weight: bold;
+}
+.process-item p { margin: 4px 0; color: var(--muted); }
+.cta { text-align: center; background: var(--navy); color: white; }
+.cta p { color: #dbe7ef; }
+footer { background: #09182a; color: #cbd6e2; padding: 28px 8%; font-size: 13px; }
+.footer-row { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+footer a { color: white; }
+@media(max-width:650px) {
+  header { justify-content: center; }
+  nav { justify-content: center; gap: 12px; }
+  .hero { padding: 70px 6%; }
+  section { padding: 52px 6%; }
+}
+</style>
 </head>
 <body>
 
 <header>
-  <div class="brand">SHIVA MATRIX SOLUTIONS</div>
+  <a class="logo" href="#home">SHIVA MATRIX <span>SOLUTIONS</span></a>
   <nav>
     <a href="#home">Home</a>
-    <a href="#about">About</a>
+    <a href="#about">About Us</a>
     <a href="#services">Services</a>
-    <a href="#process">Our Process</a>
+    <a href="#approach">Our Approach</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <main>
   <section class="hero" id="home">
-    <h1>Connecting Talent.<br>Creating Opportunities.</h1>
-    <p>
-      Your trusted recruitment and talent acquisition partner.
-      We help organizations find the right people to support
-      their business goals and growth.
-    </p>
-    <a class="btn" href="#contact">Discuss Your Hiring Needs</a>
-    <a class="btn btn-outline" href="#services">Explore Our Services</a>
+    <div class="hero-content">
+      <div class="eyebrow">Recruitment & Talent Acquisition</div>
+      <h1>The Right Talent.<br>The Right Opportunity.</h1>
+      <p>
+        We connect businesses with skilled professionals through
+        focused recruitment, thoughtful screening and a commitment
+        to building lasting professional relationships.
+      </p>
+      <a class="btn" href="#contact">Hire Talent With Us</a>
+      <a class="btn btn-outline" href="#services">Explore Our Services</a>
+    </div>
   </section>
 
   <section id="about">
-    <div class="section-title">
-      <h2>About Us</h2>
-      <p>Talent solutions built around your business needs</p>
+    <div class="section-head">
+      <div class="kicker">Who We Are</div>
+      <h2>Your Recruitment Partner for Business Growth</h2>
+      <p>Understanding your needs. Finding the right people. Supporting better hiring.</p>
     </div>
     <div class="intro">
       <p>
         Shiva Matrix Solutions is a recruitment and talent acquisition
-        firm committed to connecting businesses with qualified
-        professionals. We support organizations through personalized
-        hiring solutions, a focused sourcing approach and an emphasis
-        on quality, communication and long-term relationships.
-      </p>
-      <p>
-        Our recruitment services cover IT, Non-IT, executive and
-        leadership hiring, tailored to the requirements of each client.
+        firm focused on helping organisations identify professionals
+        who match their role requirements and business objectives.
+        We work to make hiring more focused, responsive and efficient.
       </p>
     </div>
   </section>
 
-  <section class="light" id="services">
-    <div class="section-title">
-      <h2>Our Services</h2>
-      <p>Recruitment support for diverse hiring requirements</p>
+  <section class="soft" id="services">
+    <div class="section-head">
+      <div class="kicker">Our Services</div>
+      <h2>Recruitment Solutions Designed Around You</h2>
+      <p>Flexible recruitment support for different roles and hiring needs.</p>
     </div>
-    <div class="cards">
-      <div class="card">
+    <div class="grid">
+      <article class="card">
+        <div class="symbol">IT</div>
         <h3>IT Recruitment</h3>
-        <p>Hiring support for software engineering, cloud, data,
-        AI, infrastructure, enterprise applications and technology roles.</p>
-      </div>
-      <div class="card">
+        <p>Technology hiring across software development, data, cloud,
+        AI, infrastructure, enterprise applications and specialised skills.</p>
+      </article>
+      <article class="card">
+        <div class="symbol">NT</div>
         <h3>Non-IT Recruitment</h3>
-        <p>Talent sourcing for business, operations, support,
-        sales and other non-technical functions.</p>
-      </div>
-      <div class="card">
+        <p>Recruitment support for business, operations, sales,
+        support and other non-technical functions.</p>
+      </article>
+      <article class="card">
+        <div class="symbol">EX</div>
         <h3>Executive Search</h3>
-        <p>Focused search support for senior professionals,
-        leadership positions and specialized talent.</p>
-      </div>
-      <div class="card">
+        <p>Focused sourcing for senior professionals, specialised
+        positions and leadership requirements.</p>
+      </article>
+      <article class="card">
+        <div class="symbol">PH</div>
         <h3>Permanent Hiring</h3>
-        <p>End-to-end recruitment assistance, from candidate
-        sourcing and screening to interview coordination.</p>
+        <p>Candidate sourcing, initial screening and interview
+        coordination for direct permanent positions.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="feature-band">
+    <div class="section-head">
+      <div class="kicker">Why Work With Us</div>
+      <h2>A Focus on the Right Fit</h2>
+      <p>Recruitment built around clear communication and the needs of each role.</p>
+    </div>
+    <div class="grid">
+      <div class="feature">
+        <div class="symbol" style="margin:auto">01</div>
+        <h3>Focused Sourcing</h3>
+        <p>Search for candidates aligned with the agreed requirements.</p>
+      </div>
+      <div class="feature">
+        <div class="symbol" style="margin:auto">02</div>
+        <h3>Relevant Screening</h3>
+        <p>Review experience and role fit before candidate submission.</p>
+      </div>
+      <div class="feature">
+        <div class="symbol" style="margin:auto">03</div>
+        <h3>Clear Communication</h3>
+        <p>Coordinate with clients and candidates throughout the process.</p>
+      </div>
+      <div class="feature">
+        <div class="symbol" style="margin:auto">04</div>
+        <h3>Hiring Partnership</h3>
+        <p>Build professional relationships around recruitment needs.</p>
       </div>
     </div>
   </section>
 
-  <section id="process">
-    <div class="section-title">
-      <h2>Our Approach</h2>
-      <p>A focused and transparent recruitment process</p>
+  <section id="approach">
+    <div class="section-head">
+      <div class="kicker">Our Process</div>
+      <h2>From Hiring Brief to Candidate Selection</h2>
+      <p>A structured approach that keeps recruitment requirements clear.</p>
     </div>
-    <div class="steps">
-      <p><strong>01. Understand:</strong> Learn about the role, skills,
-      experience and business expectations.</p>
-      <p><strong>02. Source:</strong> Identify suitable candidates
-      through focused talent sourcing.</p>
-      <p><strong>03. Screen:</strong> Evaluate candidate suitability
-      against the agreed requirements.</p>
-      <p><strong>04. Coordinate:</strong> Support interview scheduling,
-      feedback and communication through the hiring process.</p>
-    </div>
-  </section>
-
-  <section class="light">
-    <div class="section-title">
-      <h2>Partner With Us</h2>
-      <p>For employers looking for talent and professionals seeking opportunities</p>
-    </div>
-    <div class="intro">
-      <p>Let's discuss your recruitment requirements and explore
-      how Shiva Matrix Solutions can support your hiring goals.</p>
-      <a class="btn" href="#contact">Get in Touch</a>
+    <div class="process">
+      <div class="process-item">
+        <div class="number">1</div>
+        <div><h3>Understand the Requirement</h3><p>Discuss skills, experience, location and hiring expectations.</p></div>
+      </div>
+      <div class="process-item">
+        <div class="number">2</div>
+        <div><h3>Identify Relevant Talent</h3><p>Source suitable candidates through focused recruitment efforts.</p></div>
+      </div>
+      <div class="process-item">
+        <div class="number">3</div>
+        <div><h3>Screen and Coordinate</h3><p>Review candidate fit and support interview coordination.</p></div>
+      </div>
+      <div class="process-item">
+        <div class="number">4</div>
+        <div><h3>Support Hiring Progress</h3><p>Facilitate communication and follow-up during the hiring process.</p></div>
+      </div>
     </div>
   </section>
 
-  <section class="contact" id="contact">
-    <div class="section-title">
-      <h2>Contact Us</h2>
-      <p>We would be happy to hear from you.</p>
+  <section class="soft">
+    <div class="section-head">
+      <div class="kicker">Let's Connect</div>
+      <h2>Looking for the Right Talent?</h2>
+      <p>Share your recruitment requirement with us or contact us about career opportunities.</p>
+      <a class="btn" href="#contact">Contact Shiva Matrix Solutions</a>
     </div>
-    <p><strong>Shiva Matrix Solutions</strong></p>
-    <p>Recruitment | Talent Acquisition | Executive Search</p>
-    <p>For business enquiries, please contact us by email.</p>
-    <p>
-      <a class="btn" href="mailto:YOUR-EMAIL@example.com">
-        Email Us
-      </a>
+  </section>
+
+  <section class="cta" id="contact">
+    <div class="section-head">
+      <div class="eyebrow">Start a Conversation</div>
+      <h2>Let's Build Better Teams Together</h2>
+      <p>Contact us to discuss your hiring requirements and recruitment needs.</p>
+      <a class="btn" href="mailto:YOUR-EMAIL@example.com">Email Our Team</a>
+    </div>
+    <p style="text-align:center;font-size:14px">
+      Replace YOUR-EMAIL@example.com with your official business email.
     </p>
-    <p>Replace the sample email address with your official business email.</p>
   </section>
 </main>
 
 <footer>
-  <p>© <span id="year">2026</span> Shiva Matrix Solutions. All rights reserved.</p>
-  <p>Recruitment and Talent Acquisition Solutions</p>
+  <div class="footer-row">
+    <div><strong>SHIVA MATRIX SOLUTIONS</strong><br>Recruitment & Talent Acquisition</div>
+    <div><a href="#home">Home</a> &nbsp; | &nbsp;
+      <a href="#services">Services</a> &nbsp; | &nbsp;
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+  <p>© 2026 Shiva Matrix Solutions. All rights reserved.</p>
 </footer>
-
 </body>
 </html>
